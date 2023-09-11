@@ -11,7 +11,7 @@ function App() {
       .then(data => setCustomers(data))
     }
     loadData();
-  }, [])
+  }, []);
 
   return (
     <div className="App">
