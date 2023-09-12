@@ -1,24 +1,13 @@
-import { useEffect, useState } from "react";
+import React from 'react'
+import ListCustomers from './components/List/ListCustomers';
+import CreateCustomerForm from './components/Create/CreateCustomers';
 
-function App() {
-
-  const [customers, setCustomers] = useState([]);
-
-  useEffect(() => {
-    const loadData = () => {
-      fetch('http://localhost:8000/api/customers/')
-      .then(response => response.json())
-      .then(data => setCustomers(data))
-    }
-    loadData();
-  }, []);
-
+const App = () => {
+  
   return (
-    <div className="App">
-      {customers.map(customer => (
-        <h1 key={customer.id}>{customer.first_name} {customer.last_name}</h1>
-      ))}
-    </div>
+    <>
+      <CreateCustomerForm />
+    </>
   );
 }
 

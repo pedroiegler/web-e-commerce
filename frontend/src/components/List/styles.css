@@ -1,0 +1,30 @@
+.container{
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;
+    padding: 50px 90px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px #000;
+    margin: 0 auto;
+}
+
+table,tr,td{
+    width: 100%;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+td{
+    width: 33% !important;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+tr.one{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
