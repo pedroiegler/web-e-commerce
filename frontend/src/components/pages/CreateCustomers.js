@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Swal from 'sweetalert2';
-import './styles.css';
 
 function CreateCustomerForm({ onCustomerCreated }) {
   const [formData, setFormData] = useState({
